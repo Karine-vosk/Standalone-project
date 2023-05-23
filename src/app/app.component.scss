@@ -1,0 +1,22 @@
+.main {
+  padding: 20px;
+}
+
+.tabs {
+  color: blue;
+  mat-mdc-tab-links {
+    flex-direction: column !important;
+  }
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+::ng-deep .tabs--app .mat-mdc-tab-links {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+

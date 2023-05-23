@@ -1,0 +1,25 @@
+<div class="main">
+  <hr>
+  <br>
+  <br>
+  <div class="tabs">
+    <nav mat-tab-nav-bar
+      class="tabs__nav"
+      [tabPanel]="tabPanel">
+      <a mat-tab-link
+        *ngFor="let item of nav"
+        (click)="activeLink = item.path"
+        [routerLink]="[item.path]"
+        [active]="activeLink === item.path"
+        class="tabs__link"
+        [ngClass]="{'tabs__link--active': activeLink === item.path}">
+        {{item.name}}
+      </a>
+    </nav>
+  </div>
+</div>
+
+<mat-tab-nav-panel #tabPanel>
+  <router-outlet></router-outlet>
+</mat-tab-nav-panel>
+

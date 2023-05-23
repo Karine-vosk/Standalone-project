@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.mat-mdc-tab-link {
+  justify-content: flex-start !important;
+  padding: 0 !important;
+}
+
+.mdc-tab-indicator__content {
+  border-top: none !important;
+}
+

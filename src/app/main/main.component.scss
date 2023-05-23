@@ -1,0 +1,13 @@
+.tabs {
+  display: flex;
+  &__link {
+    color: black;
+    flex-grow: 0!important;
+    &--active {
+      
+      color: rgb(0, 255, 140)
+    }
+  }
+}
+
+
